@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar h-screen bg-grey-50 min-w-[240px]">
+  <div class="sidebar h-screen bg-[#f7f8f9] min-w-[240px]">
     <div class="h-[76px] flex items-center pl-6">
       <nuxt-link :to="localePath(`/`)">
         <CustomIcon name="icon-bwlogo" class="!w-12 !h-8 max-md:!h-6" />
