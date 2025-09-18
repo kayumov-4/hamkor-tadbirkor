@@ -1,8 +1,20 @@
 @import url("https://use.typekit.net/iyn2gpl.css");
 
-.f-container {
-  max-width: 1200px;
-  width: 100%;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+strong {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
 }
 .group:hover .marquee {
   animation-play-state: paused;

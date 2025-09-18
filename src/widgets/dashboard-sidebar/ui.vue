@@ -16,9 +16,9 @@
           >
             <component
               :is="item.icon"
-              class="sidebar-link-icon w-5 h-5 text-[#989FAD] !mb-0"
+              class="sidebar-link-icon w-5 h-5 text-[#989FAD] !mb-0 transition"
             />
-            <span>{{ item.title }}</span>
+            <span class="transition">{{ item.title }}</span>
           </nuxt-link>
         </li>
       </ul>
@@ -33,23 +33,33 @@ import { useLocalePath } from "#i18n";
 const localePath = useLocalePath();
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .sidebar-link:hover .sidebar-link-icon {
-  @apply text-primary-500;
+  color: #02c6b8;
+}
+.sidebar-link:hover span {
+  color: #02c6b8;
+}
+.sidebar .router-link-exact-active {
+  color: #02c6b8;
 }
 .sidebar .router-link-exact-active .sidebar-link-icon {
-  @apply text-primary-500;
+  color: #02c6b8;
 }
 .link-logout {
-  @apply absolute bottom-0 text-[#F9AA9F] flex items-center;
+  position: absolute;
+  bottom: 0;
+  color: #f9aa9f;
+  display: flex;
+  align-items: center;
 }
-.link-logout:hover {
-  @apply text-[#F2462F];
+.link-logout:hover span {
+  color: #f2462f;
 }
 .link-logout .sidebar-link-icon {
-  @apply text-[#F9AA9F] transition;
+  color: #f9aa9f;
 }
 .link-logout:hover .sidebar-link-icon {
-  @apply text-[#F2462F];
+  color: #f2462f;
 }
 </style>
