@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full mx-auto min-h-[100vh] flex">
+  <div class="w-full mx-auto min-h-[100vh] flex bg-gray-50">
     <Sidebar />
     <div class="w-full">
       <Topbar />
