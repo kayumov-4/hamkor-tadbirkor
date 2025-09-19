@@ -1,70 +1,70 @@
 <template>
-    <UFormField :label="label" :required="required">
-      <UInput 
-        v-model="inputValue"
-        class="border-1 block bg-[var(--color-white)] border-[var(--color-grey-border)] mt-3 rounded-xl overflow-hidden pl-[5px] text-[14px]"
-        :placeholder="placeholder"
-        :type="type"
-        :class="class"
-        :disabled="disabled"
-        :ui="ui" />
-    </UFormField>
+  <UFormField :label="label" :required="required">
+    <UInput
+      v-model="inputValue"
+      class="border-1 block bg-white border-[var(--color-grey-border)] mt-3 rounded-xl overflow-hidden pl-[5px] text-[14px]"
+      :placeholder="placeholder"
+      :type="type"
+      :class="class"
+      :disabled="disabled"
+      :ui="ui"
+    />
+  </UFormField>
 </template>
 
 <script setup>
-import { computed } from 'vue';
+import { computed } from "vue";
 
 const props = defineProps({
   modelValue: {
     type: String,
-    default: ''
+    default: "",
   },
   type: {
     type: String,
-    default: ''
+    default: "",
   },
   placeholder: {
     type: String,
-    default: ''
+    default: "",
   },
   icon: {
     type: String,
-    default: ''
+    default: "",
   },
   label: {
     type: String,
-    default: ''
+    default: "",
   },
   required: {
     type: Boolean,
-    default: false
+    default: false,
   },
   class: {
     type: String,
-    default: ''
+    default: "",
   },
-  disabled:{
+  disabled: {
     type: Boolean,
-    default: true
-  }
+    default: true,
+  },
 });
 
-const emit = defineEmits(['update:modelValue']);
+const emit = defineEmits(["update:modelValue"]);
 
 const inputValue = computed({
   get: () => props.modelValue,
-  set: (value) => emit('update:modelValue', value)
+  set: (value) => emit("update:modelValue", value),
 });
 
-
 const ui = computed(() => ({
-  base: 'h-[48px] px-[8px] text-[var(--color-gray-500)] block disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 text-sm ',
-  rounded: 'rounded-lg',
-  placeholder: 'text-[var(--color-gray-500)] dark:text-gray-500',
+  base: "h-[48px] px-[8px] text-[var(--color-gray-500)] block disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400  text-sm ",
+  rounded: "rounded-lg",
+  placeholder: "text-[var(--color-gray-500)] ",
   border: "",
   variant: {
-    solid: 'bg-white dark:bg-gray-900  dark:border-gray-700 ',
-    outline: 'bg-white dark:bg-gray-900  dark:border-gray-700 ',
-  }
+    solid: "bg-white  ",
+    outline: "bg-white  ",
+  },
 }));
 </script>
