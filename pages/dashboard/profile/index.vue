@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-y-scroll max-h-[calc(100vh-76px)] flex justify-center">
+    <div class="overflow-y-scroll max-h-[calc(100vh-76px)] flex justify-center rounded-xl bg-white">
         <PhysicalProfile />
     </div>
 </template>
