@@ -5,14 +5,16 @@
     <h3 class="text-black text-[20px] font-semibold">Shaxsiy ma'lumotlar</h3>
     <div class="flex items-center gap-6">
       <span>langChange</span>
-      <div class="flex items-center gap-3 text-gray-900">
-        <div
-          class="bg-[#4897fc] rounded-md w-8 h-8 p-[6px] flex items-center justify-center"
-        >
-          <CustomIcon name="icon-profile" class="!w-12 !h-8 max-md:!h-6" />
+      <NuxtLink to="/dashboard/profile">
+        <div class="flex items-center gap-3 text-gray-900">
+          <div
+            class="bg-[#4897fc] rounded-md w-8 h-8 p-[6px] flex items-center justify-center"
+          >
+            <CustomIcon name="icon-profile" class="!w-12 !h-8 max-md:!h-6" />
+          </div>
+          <span>User</span>
         </div>
-        <span>User</span>
-      </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
