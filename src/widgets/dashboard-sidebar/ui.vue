@@ -1,7 +1,7 @@
 <template>
-  <div class="sidebar h-screen bg-[#f7f8f9] min-w-[240px]">
+  <div class="sidebar h-screen bg-gray-50 min-w-[240px]">
     <div class="h-[76px] flex items-center pl-6">
-      <nuxt-link :to="localePath(`/`)">
+      <nuxt-link :to="localePath(`/dashboard`)">
         <CustomIcon name="icon-bwlogo" class="!w-12 !h-8 max-md:!h-6" />
       </nuxt-link>
     </div>
@@ -10,9 +10,9 @@
         <li v-for="item in sidebarMenu" :key="item.title">
           <nuxt-link
             :to="item.route"
-            class="sidebar-link flex items-center gap-3 text-grey-900 hover:text-primary-500 hover:font-bold transition"
+            class="sidebar-link flex items-center gap-3 text-gray-900 hover:text-primary-500 transition"
             :class="item.class"
-            active-class="text-primary-500 font-bold"
+            active-class="text-primary-500 "
           >
             <component
               :is="item.icon"

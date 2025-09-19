@@ -10,37 +10,37 @@ export const sidebarMenu = [
   {
     title: "Shaxsiy ma'lumotlar",
     icon: IconUserInfo,
-    route: "/dashboard",
+    route: "/dashboard/personal-data",
   },
   {
     title: "Biznes rejalar",
     icon: IconBusinessPlans,
-    route: "/",
+    route: "/dashboard",
   },
   {
     title: "Mahsulotlar",
     icon: IconProducts,
-    route: "/",
+    route: "/dashboard",
   },
   {
     title: "Xizmatlar",
     icon: IconServices,
-    route: "/",
+    route: "/dashboard",
   },
   {
     title: "Vakansiyalar",
     icon: IconVacancies,
-    route: "/",
+    route: "/dashboard",
   },
   {
     title: "Sertifikatlari",
     icon: IconCertificates,
-    route: "/",
+    route: "/dashboard",
   },
   {
     title: "Chiqish",
     icon: IconLogout,
-    route: "/",
+    route: "/dashboard",
     class: "link-logout",
   },
 ];
