@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class=" font-medium text-[14px] leading-5 ">Tug’ilgan sana</div>
-        <div class=" px-[16px] border-1 border-[var(--color-grey-border)] mt-3 rounded-xl overflow-hidden flex  items-center gap-[8px]">
+        <div class=" px-[16px] border-1 border-[var(--color-grey-border)] mt-3 rounded-xl overflow-hidden flex  items-center gap-[8px] bg-[var(--color-white)]">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6.66669 1.66666V4.16666" stroke="#B9BDC7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M13.3333 1.66666V4.16666" stroke="#B9BDC7" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -14,7 +14,7 @@
 
             <UInput 
             v-model="inputValue"
-            class="border-0 bg-[var(--color-white)]  text-[14px]"
+            class="border-0 text-[14px]"
             :placeholder="placeholder"
             :class="class"
             :disabled="disabled"
@@ -72,7 +72,7 @@ const inputValue = computed({
 
 const ui = computed(() => ({
   wrapper: 'relative',
-  base: 'h-[48px] text-[var(--color-grey-500)] disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 text-sm ',
+  base: 'h-[48px] text-[var(--color-gray-500)] disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 text-sm ',
   rounded: 'rounded-lg',
   placeholder: 'text-gray-400 dark:text-gray-500',
   border: "",

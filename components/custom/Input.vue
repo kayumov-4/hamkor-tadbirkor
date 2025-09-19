@@ -58,9 +58,9 @@ const inputValue = computed({
 
 
 const ui = computed(() => ({
-  base: 'h-[48px] px-[8px] text-[var(--color-grey-500)] block disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 text-sm ',
+  base: 'h-[48px] px-[8px] text-[var(--color-gray-500)] block disabled:cursor-not-allowed disabled:opacity-75 focus:outline-none focus:ring-0 focus:ring-transparent focus-visible:ring-0 placeholder-gray-400 dark:placeholder-gray-500 dark:bg-gray-800 text-sm ',
   rounded: 'rounded-lg',
-  placeholder: 'text-[var(--color-grey-500)] dark:text-gray-500',
+  placeholder: 'text-[var(--color-gray-500)] dark:text-gray-500',
   border: "",
   variant: {
     solid: 'bg-white dark:bg-gray-900  dark:border-gray-700 ',

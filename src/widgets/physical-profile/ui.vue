@@ -1,5 +1,5 @@
 <template>
-<main class="max-w-[809px] w-full my-[80px] gap-[32px]">
+<main class="max-w-[809px] w-full gap-[32px] mt-[80px] pb-[80px]">
     <div class=" flex gap-[24px]">
         <CustomAvatar :src="avatarSrc" />
         <div>
